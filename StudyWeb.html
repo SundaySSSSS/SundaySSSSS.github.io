@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>学习网站导航</title>
+    <style>
+        header {
+            background-color:black;
+            background-image: url("images/code.jpg");
+            background-size:100%;   /* 让图片拉伸到当前header的宽度， 但不保证高度 */
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 320px;
+        }
+        header.logo a.cpp{
+            background-image: url("images/CppLogo.png");
+            background-size:100px;
+            background-repeat: no-repeat;
+            display:inline-block;
+            height:120px;
+            width:300px;
+        }
+        header.logo a.python{
+            background-image: url("images/PythonLogo.png");
+            background-size:100px;
+            background-repeat: no-repeat;
+            display:inline-block;
+            height:120px;
+            width:300px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            color: gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            margin: auto;
+            width:100px;
+            color:gray;
+            text-align: center;
+        }
+
+        /* 具有content类名的所有img节点的样式 */
+        .content img { 
+            border-radius: 10px;
+            border: 1px solid gray; /* 边框 */
+            box-shadow: black 10px 10px 10px; /* 阴影效果 */
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header class="logo">
+        <nav>
+            <ul>
+                <li><a class = "cpp" href="http://www.cplusplus.com/">link to cpp</a></li>
+                <li><a class = "python" href="https://www.liaoxuefeng.com/wiki/1016959663602400#0">link to python</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <figure class="content">
+            <figcaption>Python</figcaption>
+            <img src="images/PythonLogo.png" alt="Python">
+        </figure>
+        <figure class="content">
+            <figcaption>C++</figcaption>
+            <img src="images/CppLogo.png" alt="C++">
+        </figure>
+    </section>
+</body>
+</html>
